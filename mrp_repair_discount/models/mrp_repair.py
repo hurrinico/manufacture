@@ -83,7 +83,7 @@ class MrpRepair(models.Model):
         return res
 
     _columns = {
-        'amount_tax': fields.function(
+        'amount_tax': old_fields.function(
             _amount_tax, string='Taxes',
             store={
                 'mrp.repair': (
